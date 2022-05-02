@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/JWT-TokenValidation/static/css/main.50b560f4.css",
-    "main.js": "/JWT-TokenValidation/static/js/main.6685ad38.js",
+    "main.js": "/JWT-TokenValidation/static/js/main.c7852f9b.js",
     "static/js/787.c9e3c74b.chunk.js": "/JWT-TokenValidation/static/js/787.c9e3c74b.chunk.js",
     "index.html": "/JWT-TokenValidation/index.html",
     "main.50b560f4.css.map": "/JWT-TokenValidation/static/css/main.50b560f4.css.map",
-    "main.6685ad38.js.map": "/JWT-TokenValidation/static/js/main.6685ad38.js.map",
+    "main.c7852f9b.js.map": "/JWT-TokenValidation/static/js/main.c7852f9b.js.map",
     "787.c9e3c74b.chunk.js.map": "/JWT-TokenValidation/static/js/787.c9e3c74b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50b560f4.css",
-    "static/js/main.6685ad38.js"
+    "static/js/main.c7852f9b.js"
   ]
 }
