@@ -2,6 +2,56 @@
   text-align: center;
 }
 
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* x */
+  background-color: #191919;
+  color: gainsboro;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  justify-content: center;
+  margin-top: 90px;
+  width: 90%;
+  height: 50%;
+  padding: 20px;
+  background-color: #383838;
+}
+
+h1{
+  font-size: 45px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+input{
+  border: 1px solid #066163;
+  border-radius: 7px;
+  padding: 10px 20px ;
+  font-size: 15px;
+  outline: none;
+  color: gainsboro;
+  background-color: #066163;
+}
+
+button{
+  margin-top: 10px;
+  border: 1px solid #CDBE78;
+  border-radius: 7px;
+  padding: 10px 100px ;
+  font-size: 15px;
+  color: black ;
+  outline: none;
+  background-color: #CDBE78;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
