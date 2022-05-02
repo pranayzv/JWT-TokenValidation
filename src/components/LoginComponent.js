@@ -1,13 +1,24 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
 import jwt from "jsonwebtoken";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./ComponentAuthProvider";
 
 function LoginComponent(props) {
-  const [user, setUser] = useState();
   const navigate = useNavigate();
   const auth = useAuth();
+
+  const checkToken = (token, onErrorAction) => {
+    try {
+      const decode = jwt.verify(token, publicKey, { algorithms: ["RS256"] });
+      localStorage.setItem("token", token);
+      auth.login(decode.name, decode.eid);
+      navigate("welcome", { replace: true });
+    } catch (e) {
+      onErrorAction();
+    }
+  };
+
+  const [user, setUser] = useState();
 
   const myServer = (e) => {
     e.preventDefault();
@@ -15,21 +26,21 @@ function LoginComponent(props) {
   };
 
   const onResponse = () => {
-    try {
-      const decode = jwt.verify(
-        t,
-        user === "Pranay" ? publicKey : wrongPublicKey,
-        { algorithms: ["RS256"] }
-      );
-      localStorage.setItem("token", t);
-      auth.login(decode.name, decode.eid);
-      navigate("welcome");
-    } catch (e) {
+    checkToken(t, () => {
       alert("Invalid credentials");
       localStorage.setItem("token", null);
-    }
+    });
   };
 
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      console.log("checking loacal token");
+      console.log(localStorage.getItem("token"));
+      checkToken(localStorage.getItem("token"), () => {});
+    } else {
+      console.log("No loacal token");
+    }
+  }, []);
   return (
     <div>
       <form className="container" onSubmit={myServer}>

@@ -47,6 +47,23 @@ button{
   border-radius: 7px;
   padding: 10px 100px ;
   font-size: 15px;
+  outline: 2px;
+  color: black ;
+  outline: none;
+  background-color: #CDBE78;
+
+}
+
+
+.logout-button {
+  margin-top: 10px;
+  border: 1px solid #CDBE78;
+  border-radius: 7px;
+  padding: 10px 100px ;
+  padding-left: 90%;
+  padding-right: 90%;
+  font-size: 15px;
+  outline: 2px;
   color: black ;
   outline: none;
   background-color: #CDBE78;
@@ -85,4 +102,15 @@ button{
   to {
     transform: rotate(360deg);
   }
+}
+
+
+button:hover {
+  background-color: #e6d37c;
+}
+
+button:active {
+background-color: #e6d37c;
+box-shadow: 0 1px #383838;
+transform: translateY(1px);
 }

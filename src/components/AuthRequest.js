@@ -12,4 +12,4 @@ function AuthRequest({ children }) {
   return <Navigate to="/" />;
 }
 
-export default AuthRequest;
+export default AuthRequest; 
