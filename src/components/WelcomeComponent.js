@@ -2,7 +2,7 @@ import React from "react";
 import { useAuth } from "./ComponentAuthProvider";
 import i from "../images/icons8-employee-64.png";
 import { useNavigate } from "react-router-dom";
-import { base } from "../App";
+
 
 function WelcomeComponent(props) {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function WelcomeComponent(props) {
         <button
           onClick={() => {
             localStorage.setItem("token", null);
-            navigate( base, { replace: true });
+            navigate("/JWT-TokenValidation", { replace: true });
           }}
         >
           Logout
