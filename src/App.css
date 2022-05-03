@@ -57,20 +57,21 @@ button{
 
 .logout-button {
   margin-top: 10px;
-  border: 1px solid #ff1a1a;
+  border: 1px solid #ff3333;
   border-radius: 7px;
   padding: 10px 100px ;
   font-size: 15px;
   outline: 2px;
   color: black ;
   outline: none;
-  background-color: #ff1a1a;
+  background-color: #ff3333;
 
 }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
