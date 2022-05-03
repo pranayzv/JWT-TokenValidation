@@ -10,7 +10,7 @@ function AuthRequest({ children }) {
     return children;
   }
 
-  return <Navigate to="/" replace={true} />;
+  return <Navigate to="/" />;
 }
 
 export default AuthRequest;
