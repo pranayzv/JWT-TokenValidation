@@ -22,6 +22,7 @@ function WelcomeComponent(props) {
         <h2>Hello {username}</h2>
         <h5>your eid number is: {eid}</h5>
         <button
+          className="logout-button"
           onClick={() => {
             localStorage.setItem("token", null);
             navigate("/", { replace: true });
