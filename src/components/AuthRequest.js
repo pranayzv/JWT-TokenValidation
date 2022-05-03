@@ -1,6 +1,6 @@
 import React from "react";
 import { useAuth } from "./ComponentAuthProvider";
-import { Navigate } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 function AuthRequest({ children }) {
   const auth = useAuth();
@@ -10,7 +10,7 @@ function AuthRequest({ children }) {
     return children;
   }
 
-  return <Navigate to="/" />;
+  return <Redirect to="/" />;
 }
 
 export default AuthRequest;
