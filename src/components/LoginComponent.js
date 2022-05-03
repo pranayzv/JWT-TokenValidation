@@ -33,6 +33,7 @@ function LoginComponent(props) {
   };
 
   useEffect(() => {
+    console.log("LoginComponent Component.");
     if (localStorage.getItem("token")) {
       console.log("checking loacal token");
       console.log(localStorage.getItem("token"));

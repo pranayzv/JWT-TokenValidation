@@ -3,13 +3,12 @@ import { useAuth } from "./ComponentAuthProvider";
 import i from "../images/icons8-employee-64.png";
 import { useNavigate } from "react-router-dom";
 
-
 function WelcomeComponent(props) {
   const navigate = useNavigate();
   const auth = useAuth();
   const username = auth.username;
   const eid = auth.eid;
-
+  console.log("Welcome Component.");
   return (
     <>
       <div className="container">

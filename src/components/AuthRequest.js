@@ -4,7 +4,8 @@ import { Navigate } from "react-router-dom";
 
 function AuthRequest({ children }) {
   const auth = useAuth();
-    
+  console.log("AuthRequest Component.");
+
   if (auth.username) {
     return children;
   }
@@ -12,4 +13,4 @@ function AuthRequest({ children }) {
   return <Navigate to="/" />;
 }
 
-export default AuthRequest; 
+export default AuthRequest;

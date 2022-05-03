@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LoginComponent />} />
           <Route
-            path="/welcome"
+            path="/#/welcome"
             element={
               <AuthRequest>
                 <WelcomeComponent />
