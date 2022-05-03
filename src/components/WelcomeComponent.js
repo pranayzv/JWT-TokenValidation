@@ -23,7 +23,7 @@ function WelcomeComponent(props) {
         <button
           onClick={() => {
             localStorage.setItem("token", null);
-            navigate("/JWT-TokenValidation", { replace: true });
+            navigate("/", { replace: true });
           }}
         >
           Logout
