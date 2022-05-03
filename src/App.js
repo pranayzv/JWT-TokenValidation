@@ -10,9 +10,9 @@ function App() {
     <>
       <AuthProvider>
         <Routes>
-          <Route path="/JWT-TokenValidation" element={<LoginComponent />} />
+          <Route path="/" element={<LoginComponent />} />
           <Route
-            path="/JWT-TokenValidation/welcome"
+            path="/welcome"
             element={
               <AuthRequest>
                 <WelcomeComponent />
