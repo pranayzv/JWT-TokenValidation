@@ -9,7 +9,11 @@ function LoginComponent(props) {
 
   const checkToken = (token, onErrorAction) => {
     try {
-      const decode = jwt.verify(token, publicKey, { algorithms: ["RS256"] });
+      const decode = jwt.verify(
+        token,
+        user === "Pranay" ? publicKey : wrongPublicKey,
+        { algorithms: ["RS256"] }
+      );
       localStorage.setItem("token", token);
       auth.login(decode.name, decode.eid);
       navigate("welcome", { replace: true });
