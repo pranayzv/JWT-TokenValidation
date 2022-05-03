@@ -23,7 +23,7 @@ function WelcomeComponent(props) {
         <button
           onClick={() => {
             localStorage.setItem("token", null);
-            navigate("/", { replace: true });
+            navigate("", { replace: true });
           }}
         >
           Logout
